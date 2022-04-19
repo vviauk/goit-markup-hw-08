@@ -1,0 +1,48 @@
+/* main section 2 Что делаем */
+
+.jobs {
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.jobs__main {
+  display: flex;
+}
+
+.jobs__list {
+  display: flex;
+  margin-right: 30px;
+  align-items: center;
+}
+
+.jobs__works,
+.team__our,
+.clients__title {
+  display: inline-block;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.jobs__wrapper {
+  position: relative;
+}
+
+.jobs__description {
+  position: absolute;
+  width: 100%;
+  min-height: 70px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+}

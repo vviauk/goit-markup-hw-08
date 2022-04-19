@@ -1,0 +1,45 @@
+:root {
+    /* main fonts */
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: Raleway, sans-serif;
+    /* text color */
+    --primary-text-color: rgba(33, 33, 33, 1);
+    --secondary-text-color: rgba(255, 255, 255, 1);
+    --hover-focus-color: rgba(33, 150, 243, 1);
+    /* background color */
+    --primary-background-color: rgba(255, 255, 255, 1);
+    --secondary-background-color: rgba(33, 150, 243, 1);
+    --hero-footer-background-color: rgba(47, 48, 58, 1);
+    /* font size */
+    --primary-font-size: 16px;
+  }
+
+body {
+    background-color: var(--primary-background-color);
+    font-family: var(--main-font);
+    color: var(--primary-text-color);
+    font-size: var(--primary-font-size);
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+  }
+
+  .header__logo:hover,
+.header__logo:focus,
+.footer__logo,
+.footer__logo,
+.header__studio:hover,
+.header__studio:focus,
+.header__link:hover,
+.header__link:focus,
+.header__contacts.link.phone:hover,
+.header__contacts.link.phone:focus,
+.header__contacts.link:hover,
+.header__contacts.link:focus,
+.footer__phone:hover,
+.footer__phone:focus,
+.footer__email:hover,
+.footer__email:focus {
+  color: var(--hover-focus-color);
+}
+  
+  

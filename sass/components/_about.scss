@@ -1,0 +1,56 @@
+/* main section 1 Преимущества*/
+
+.about__hidden {
+  display: none;
+}
+
+.about {
+  padding-top: 94px;
+}
+
+.about__list {
+  min-width: 270px;
+  margin-right: 30px;
+}
+
+.about__list:last-child {
+  margin-right: 0;
+}
+
+.about__main {
+  display: flex;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.about__thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 270px;
+  min-height: 120px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.about__icons {
+  display: grid;
+  justify-content: center;
+}
+.about__advantages {
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about__description {
+  display: flex;
+  min-width: 270px;
+  color: rgba(117, 117, 117, 1);
+  font-size: 14px;
+  line-height: 1.5;
+}
