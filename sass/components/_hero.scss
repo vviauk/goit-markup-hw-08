@@ -2,10 +2,14 @@
 
 .hero {
   position: relative;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  // padding-top: 200px;
+  // padding-bottom: 200px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/background.jpg);
+  url(../images/background_480.jpg),
+    // url(../images/background.jpg)
+    ;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-color: var(--hero-footer-background-color);
@@ -13,23 +17,27 @@
 }
 
 .hero__title {
-  display: inline-block;
+  // display: inline-block;
+  
   padding-bottom: 30px;
   margin-top: 0;
   margin-bottom: 0;
-  min-width: 696px;
+  // min-width: 696px;
   color: #fff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
+
+  // font-size: 44px;
+  // line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .hero__button {
-  display: inline-block;
+  // display: inline-block;
   padding: 10px 32px;
-  min-width: 200px;
+    min-width: 200px;
   max-width: 300px;
   font-family: inherit;
   color: var(--secondary-text-color);
