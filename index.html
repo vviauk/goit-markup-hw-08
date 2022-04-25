@@ -15,7 +15,7 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="./css/main.min.css">
-    <title>Module 8 - WebStudio</title>
+  <title>Module 8 - WebStudio</title>
 </head>
 
 <body>
@@ -71,7 +71,7 @@
         </div>
       </div>
     </section>
-   
+
     <!-- Преимущества -->
     <section class="about">
       <div class="container">
@@ -308,7 +308,7 @@
         </ul>
       </div>
     </section>
-    
+
     <!-- Клиенты -->
     <section class="clients">
       <div class="container">
@@ -365,66 +365,74 @@
   <footer class="footer">
     <div class="container">
       <ul class="footer__addresses">
-        <li class="footer__list">
-          <address class="footer__address">
-            <a class="footer__logo link" href="./index.html">Web<span class="footer__style">Studio</span>
-            </a>
-            <p class="footer__address link">г. Киев, пр-т Леси Украинки, 26</p>
-            <a class="footer__email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="footer__phone link" href="tel:+380961111111">+38 096 111 11 11</a>
-          </address>
-        </li>
-        <li class="footer__list">
-          <h3 class="footer__title">присоединяйтесь</h3>
-          <ul class="footer__links">
-            <li class="footer__social">
-              <a class="footer__button" href="">
-                <svg class="footer__icons" width="20" height="20">
-                  <use href="images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
+        <div class="footer__table">
+          <div class="footer__container">
+            <li class="footer__list">
+              <address class="footer__address">
+                <a class="footer__logo link" href="./index.html">Web<span class="footer__style">Studio</span>
+                </a>
+                <p class="footer__address link">г. Киев, пр-т Леси Украинки, 26</p>
+                <a class="footer__email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="footer__phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </address>
             </li>
-            <li class="footer__social">
-              <a class="footer__button" href="">
-                <svg class="footer__icons" width="20" height="20">
-                  <use href="images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
+          </div>
+          <div class="footer__container" v>
+            <li class="footer__list">
+              <h3 class="footer__title">присоединяйтесь</h3>
+              <ul class="footer__links">
+                <li class="footer__social">
+                  <a class="footer__button" href="">
+                    <svg class="footer__icons" width="20" height="20">
+                      <use href="images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social">
+                  <a class="footer__button" href="">
+                    <svg class="footer__icons" width="20" height="20">
+                      <use href="images/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social">
+                  <a class="footer__button" href="">
+                    <svg class="footer__icons" width="20" height="20">
+                      <use href="images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social">
+                  <a class="footer__button" href="">
+                    <svg class="footer__icons" width="20" height="20">
+                      <use href="images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </li>
-            <li class="footer__social">
-              <a class="footer__button" href="">
-                <svg class="footer__icons" width="20" height="20">
-                  <use href="images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__social">
-              <a class="footer__button" href="">
-                <svg class="footer__icons" width="20" height="20">
-                  <use href="images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="footer__list">
-          <h3 class="footer__title">Подпишитесь на рассылку</h3>
-          <form class="footer__form" action="">
-            <label class="footer_submit" for="email">
-              <input class="footer__frame" type="email" name="email" id="email" required placeholder="E-mail">
-            </label>
-            <button class="footer__submit-btn" type="submit">Подписаться
-              <svg class="footer__send-icon" width="24" height="24">
-                <use href="images/icons.svg#icon-icon"></use>
-              </svg></button>
-          </form>
-        </li>
+          </div>
+        </div>
+        <div class="footer__subcontainer">
+          <li class="footer__list">
+            <h3 class="footer__title">Подпишитесь на рассылку</h3>
+            <form class="footer__form" action="">
+              <label class="footer_submit" for="email">
+                <input class="footer__frame" type="email" name="email" id="email" required placeholder="E-mail">
+              </label>
+              <button class="footer__submit-btn" type="submit">Подписаться
+                <svg class="footer__send-icon" width="24" height="24">
+                  <use href="images/icons.svg#icon-icon"></use>
+                </svg></button>
+            </form>
+          </li>
+        </div>
       </ul>
     </div>
   </footer>
 
   <!-- backdrop -->
-  <!-- <section class="backdrop">
+  <section class="backdrop">
     <div class="container">
       <div class="backdrop__position is-hidden" data-modal>
         <div class="backdrop__modal">
@@ -457,15 +465,16 @@
               </label>
             </div>
             <div class="backdrop__field">
-              <label class="backdrop__label" for="coments">Комментарий<textarea class="backdrop__feedback" name="feedback" id="coments"
-                  rows="5" placeholder="Введите текст"></textarea>
+              <label class="backdrop__label" for="coments">Комментарий<textarea class="backdrop__feedback"
+                  name="feedback" id="coments" rows="5" placeholder="Введите текст"></textarea>
               </label>
             </div>
             <div class="backdrop__field">
               <label class="checkbox">
                 <input class="checkbox__field" type="checkbox" name="checkbox" value="checkbox" />
                 <span class="checkbox__icon"></span>
-                <span class="checkbox__label">Соглашаюсь с рассылкой и принимаю <a class="checkbox__link" href="">Условия
+                <span class="checkbox__label">Соглашаюсь с рассылкой и принимаю <a class="checkbox__link"
+                    href="">Условия
                     договора</a></span>
               </label>
             </div>
@@ -477,7 +486,7 @@
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
 
   <script src="./js/modal.js"></script>
