@@ -8,10 +8,14 @@
 }
 
 .footer__addresses {
+  text-align: center;
+  padding: 0;
+  @media screen and (min-width:1200px) {
   display: flex;
   margin: 0;
   padding: 0;
   align-items: baseline;
+  }
 }
 
 .footer__title {
@@ -28,11 +32,16 @@
 
 .footer__list {
   list-style: none;
-  margin-right: 70px;
+  text-align: center;
 
-  &:nth-child(2) {
-    margin-right: 93px;
+  @media screen and (min-width:1200px) {
+    margin-right: 70px;
+
+    &:nth-child(2) {
+      margin-right: 93px;
+    }
   }
+
 
   &:last-child {
     margin-right: 0;
@@ -171,5 +180,7 @@
 }
 
 .footer__form {
+  @media screen and (min-width:1200px) {
   display: flex;
+  }
 }

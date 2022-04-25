@@ -37,16 +37,24 @@
 }
 
 .about__main {
-  @media screen and (min-width:1200px) {
-
-    display: flex;
-  }
   padding-left: 0;
   padding-right: 0;
+
+
+  @media screen and (min-width:768px) {
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width:1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .about__thumb {
   display: flex;
+  
   align-items: center;
   justify-content: center;
   min-width: 270px;
@@ -59,8 +67,8 @@
 }
 
 .about__icons {
-  display: grid;
-  justify-content: center;
+  // display: grid;
+  // justify-content: center;
 }
 .about__advantages {
   @media screen and (min-width:1200px) {
