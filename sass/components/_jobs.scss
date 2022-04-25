@@ -1,7 +1,9 @@
 /* main section 2 Что делаем */
 
 .jobs {
-  text-align: center;
+  @media screen and (max-width: 1199px) 
+    {display: none;}
+    text-align: center;
   padding-top: 94px;
   padding-bottom: 94px;
 }
