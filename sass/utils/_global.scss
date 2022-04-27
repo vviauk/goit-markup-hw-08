@@ -17,10 +17,7 @@ img {
   }
   
   .container {
-    @media screen and (min-width:1200px) {
-
-      width: 1200px;
-    }
+    
     max-width: 480px;
     padding-left: 15px;
     padding-right: 15px;
@@ -39,8 +36,6 @@ img {
       // padding-left: 39px;
       // padding-right: 39px;
     }
-  
-  
   }
 
 .header__section,

@@ -73,12 +73,6 @@ p {
   margin-right: auto;
 }
 
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     max-width: 768px;
@@ -103,9 +97,16 @@ p {
 
 /* header */
 .header {
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -323,7 +324,6 @@ a {
 .mobile__button {
   display: flex;
   align-items: center;
-  justify-content: center;
   margin-left: auto;
   width: 40px;
   height: 40px;
@@ -331,8 +331,10 @@ a {
   cursor: pointer;
 }
 
-.mobile__icons {
+.mobile__icons:hover,
+.mobile__icons:focus {
   fill: var(--hover-focus-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile__open {
@@ -357,6 +359,34 @@ a {
 
 .mobile__contacts {
   display: none;
+}
+
+.mobile__menu-nav {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mobile__menu-contacts {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.mobile__menu-contacts:first-child {
+  font-size: 34px;
+  line-height: 40px;
+}
+
+.mobile__menu-contacts:last-child {
+  font-size: 24px;
+  line-height: 28px;
 }
 
 /* hero */
@@ -736,7 +766,6 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* main section 4 Клиенты*/
 .clients {
   text-align: center;
   padding-top: 60px;
