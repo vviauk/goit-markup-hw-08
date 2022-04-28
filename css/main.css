@@ -289,6 +289,7 @@ p {
 
 a {
   text-decoration: none;
+  color: #212121;
 }
 
 .mobile__nav {
@@ -371,22 +372,59 @@ a {
   color: #212121;
 }
 
-.mobile__menu-contacts {
-  font-family: 'Roboto';
-  font-style: normal;
+.mobile__menu-item {
+  list-style: none;
+  cursor: pointer;
+}
+
+.mobile__menu-link:hover, .mobile__menu-link:focus {
+  color: #2196F3;
+}
+
+.mobile__menu-items {
+  list-style: none;
+  cursor: pointer;
+}
+
+.mobile__menu-phone {
   font-weight: 500;
   letter-spacing: 0.02em;
+  color: #2196F3;
+  font-size: 34px;
+  line-height: 1.18;
+}
+
+.mobile__menu-email {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 24px;
+  line-height: 1.17;
   color: #757575;
 }
 
-.mobile__menu-contacts:first-child {
-  font-size: 34px;
-  line-height: 40px;
+.mobile__menu-social {
+  display: flex;
 }
 
-.mobile__menu-contacts:last-child {
-  font-size: 24px;
-  line-height: 28px;
+.mobile__menu-socials {
+  margin-right: 20px;
+}
+
+.mobile__menu-socials:last-child {
+  margin-right: 0;
+}
+
+.mobile__menu-socials {
+  list-style: none;
+  cursor: pointer;
+}
+
+.mobile__menu-links {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196F3;
 }
 
 /* hero */
