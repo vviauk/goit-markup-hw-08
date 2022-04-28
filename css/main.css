@@ -363,6 +363,10 @@ a {
 }
 
 .mobile__menu-nav {
+  margin: 0;
+  padding: 0;
+  padding-top: 48px;
+  margin-bottom: 300px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -373,23 +377,47 @@ a {
 }
 
 .mobile__menu-item {
+  padding-left: 40px;
+  margin-bottom: 32px;
   list-style: none;
   cursor: pointer;
+}
+
+.mobile__menu-item:last-child {
+  margin-bottom: 0;
+}
+
+.mobile__menu-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
 }
 
 .mobile__menu-link:hover, .mobile__menu-link:focus {
-  color: #2196F3;
+  color: #2196f3;
+}
+
+.mobile__menu-contacts {
+  margin: 0;
+  padding: 0;
 }
 
 .mobile__menu-items {
+  padding-left: 40px;
+  margin-bottom: 32px;
   list-style: none;
   cursor: pointer;
+}
+
+.mobile__menu-items:last-child {
+  margin-bottom: 0;
 }
 
 .mobile__menu-phone {
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: #2196f3;
   font-size: 34px;
   line-height: 1.18;
 }
@@ -404,6 +432,11 @@ a {
 
 .mobile__menu-social {
   display: flex;
+  margin: 0;
+  padding: 0;
+  padding-left: 40px;
+  margin-top: 64px;
+  margin-bottom: 48px;
 }
 
 .mobile__menu-socials {
@@ -424,7 +457,7 @@ a {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: #2196f3;
 }
 
 /* hero */
@@ -1050,7 +1083,7 @@ a {
 
 .footer__frame {
   border: 1px solid rgba(255, 255, 255, 0.3);
-  min-width: 358px;
+  min-width: 280px;
   min-height: 50px;
   background-color: inherit;
   letter-spacing: 0.03em;
@@ -1061,6 +1094,12 @@ a {
   padding-left: 16px;
   margin-bottom: 20px;
   outline: transparent;
+}
+
+@media screen and (min-width: 480px) {
+  .footer__frame {
+    min-width: 348px;
+  }
 }
 
 .footer__frame:hover, .footer__frame:focus {
@@ -1198,11 +1237,17 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 450px;
+  min-width: 400px;
   min-height: 609px;
   background-color: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .backdrop__modal {
+    min-width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

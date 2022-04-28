@@ -30,8 +30,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 450px;
+  min-width: 400px;
   min-height: 609px;
+  @media screen and (min-width: 480px) {
+    min-width: 450px;
+  }
 
   @media screen and (min-width:1200px) {
     min-width: 528px;
