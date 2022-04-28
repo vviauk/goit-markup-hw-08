@@ -267,6 +267,64 @@ p {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
+.mobile__nav {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .mobile__nav {
+    display: none;
+  }
+}
+
+.mobile__container {
+  width: 100%;
+}
+
+.mobile__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.mobile__open {
+  opacity: 1;
+}
+
+.mobile__close {
+  opacity: 0;
+}
+
+.header__icons {
+  margin: 0;
+}
+
+.mobile__list {
+  display: none;
+}
+
+.mobile__item {
+  display: none;
+}
+
+.mobile__link {
+  display: none;
+}
+
+.mobile__contacts {
+  display: none;
+}
+
 /* hero */
 .hero {
   position: relative;
