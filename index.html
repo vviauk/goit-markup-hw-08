@@ -39,16 +39,16 @@
 
       <ul class="header__wrapper">
         <li class="header__links">
-          <a class="header__contacts link" href="mailto:info@devstudio.com"><svg class="header__icons" width="16"
-              height="12">
+          <a class="header__contacts link" href="mailto:info@devstudio.com"><svg class="header__icons-email" width="14"
+              height="10">
               <use href="images/icons.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com</a>
         </li>
 
         <li class="header__links">
-          <a class="header__contacts link phone" href="tel:+380961111111"><svg class="header__icons" width="10"
-              height="16">
+          <a class="header__contacts link phone" href="tel:+380961111111"><svg class="header__icons-phone" width="10"
+              height="14">
               <use href="images/icons.svg#icon-phone"></use>
             </svg>+38 096 111 11 11</a>
         </li>
@@ -56,45 +56,47 @@
     </div>
     <div class="container mobile__container">
       <nav class="mobile__nav">
-        <!-- <a class="mobile__logo" href="./index.html">Web<span class="mobile__type">Studio</span></a>
-        <button class="mobile__button" type="button">
-         <svg class="mobile__icons" width="40"
-              height="40">
-              <use class="mobile__open" href="images/icons.svg#icon-menu-mobile"></use>
-              <use class="mobile__close" href="images/icons.svg#icon-close-mobile"></use>
-            </svg>
-        </button> -->
+        <a class="mobile__logo" href="./index.html">Web<span class="mobile__type">Studio</span></a>
+        <button class="mobile__button" data-menu-button type="button" aria-expanded="false">
+          <svg class="mobile__icons" width="40" height="40">
+            <use class="mobile__open" href="images/icons.svg#icon-menu-mobile"></use>
+            <use class="mobile__close" href="images/icons.svg#icon-close-mobile"></use>
+          </svg>
+        </button>
 
-
-
-
-        <div class="mobile__menu">
+        <div class="mobile__menu" data-menu>
           <ul class="mobile__menu-nav">
             <li class="mobile__menu-item">
-              <a class="mobile__menu-link" href="">Студия</a></li>
+              <a class="mobile__menu-link" href="./index.html">Студия</a>
+            </li>
             <li class="mobile__menu-item">
-              <a class="mobile__menu-link" href="">Портфолио</a></li>
+              <a class="mobile__menu-link" href="./portfolio.html">Портфолио</a>
+            </li>
             <li class="mobile__menu-item">
-              <a class="mobile__menu-link" href="">Контакты</a></li>
+              <a class="mobile__menu-link" href="">Контакты</a>
+            </li>
           </ul>
-          <ul class="mobile__menu-contacts">
-            <li class="mobile__menu-items"><a class="mobile__menu-phone" href="">+38 096 111 11 11</a></li>
-            <li class="mobile__menu-items"><a class="mobile__menu-email" href="">info@devstudio.com</a></li>
-          </ul>
-          <ul class="mobile__menu-social">
-            <li class="mobile__menu-socials">
-              <a class="mobile__menu-links" href="">Instagram</a></li>
-            <li class="mobile__menu-socials">
-              <a class="mobile__menu-links" href="">Twitter</a></li>
-            <li class="mobile__menu-socials">
-              <a class="mobile__menu-links" href="">Facebook</a></li>
-            <li class="mobile__menu-socials">
-              <a class="mobile__menu-links" href="">LinkedIn</a></li>
-          </ul>
+          <div class="mobile__menu-wrapper">
+            <ul class="mobile__menu-contacts">
+              <li class="mobile__menu-items"><a class="mobile__menu-phone" href="">+38 096 111 11 11</a></li>
+              <li class="mobile__menu-items"><a class="mobile__menu-email" href="">info@devstudio.com</a></li>
+            </ul>
+            <ul class="mobile__menu-social">
+              <li class="mobile__menu-socials">
+                <a class="mobile__menu-links" href="">Instagram</a>
+              </li>
+              <li class="mobile__menu-socials">
+                <a class="mobile__menu-links" href="">Twitter</a>
+              </li>
+              <li class="mobile__menu-socials">
+                <a class="mobile__menu-links" href="">Facebook</a>
+              </li>
+              <li class="mobile__menu-socials">
+                <a class="mobile__menu-links" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
-
-
-
 
         <ul class="mobile__list">
           <li class="mobile__item"><a class="mobile__link" href="./index.html"></a>Студия</li>
@@ -185,31 +187,22 @@
         <ul class="jobs__main">
           <li class="jobs__list">
             <div class="jobs__wrapper">
-              <img 
-              srcset="./images/index/print_lg.jpg 1x, ./images/index/print_lg2.jpg 2x"
-              src="./images/print_lg.jpg" 
-              alt="Печать" 
-              width="370" />
+              <img srcset="./images/index/print_lg.jpg 1x, ./images/index/print_lg2.jpg 2x" src="./images/print_lg.jpg"
+                alt="Печать" width="370" />
               <p class="jobs__description">десктопные приложения</p>
             </div>
           </li>
           <li class="jobs__list">
             <div class="jobs__wrapper">
-              <img 
-              srcset="./images/index/phone_lg.jpg 1x, ./images/index/phone_lg2.jpg 2x"
-              src="./images/phone_lg.jpg" 
-              alt="Печать" 
-              width="370" />
+              <img srcset="./images/index/phone_lg.jpg 1x, ./images/index/phone_lg2.jpg 2x" src="./images/phone_lg.jpg"
+                alt="Печать" width="370" />
               <p class="jobs__description">Мобильные приложения</p>
             </div>
           </li>
           <li class="jobs__list">
             <div class="jobs__wrapper">
-              <img 
-              srcset="./images/index/tablet_lg.jpg 1x, ./images/index/tablet_lg2.jpg 2x"
-              src="./images/tablet_lg.jpg" 
-              alt="Печать" 
-              width="370" />
+              <img srcset="./images/index/tablet_lg.jpg 1x, ./images/index/tablet_lg2.jpg 2x"
+                src="./images/tablet_lg.jpg" alt="Печать" width="370" />
               <p class="jobs__description">Дизайнерские решения</p>
             </div>
           </li>
@@ -223,18 +216,14 @@
         <h2 class="team__our">Наша команда</h2>
         <ul class="team__main">
           <li class="team__list">
-           <img 
-            srcset="
+            <img srcset="
             ./images/index/igor_sm.jpg 450w, 
             ./images/index/igor_sm2.jpg 900w
             ./images/index/igor_md.jpg 354w, 
             ./images/index/igor_md2.jpg 708w,
             ./images/index/igor_lg.jpg 270w,  
-            ./images/index/igor_lg2.jpg 540w"
-
-            src="./images/index/igor_sm.jpg" 
-            alt="Игорь Демьяненко"
-            sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" />
+            ./images/index/igor_lg2.jpg 540w" src="./images/index/igor_sm.jpg" alt="Игорь Демьяненко"
+              sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" />
             <div class="team__actor">
               <h3 class="team__actors">Игорь Демьяненко</h3>
               <p class="team__roles">Product Designer</p>
@@ -271,18 +260,14 @@
             </div>
           </li>
           <li class="team__list">
-            <img 
-            srcset="
+            <img srcset="
             ./images/index/igor_sm.jpg 450w, 
             ./images/index/igor_sm2.jpg 900w
             ./images/index/igor_md.jpg 354w, 
             ./images/index/igor_md2.jpg 708w,
             ./images/index/igor_lg.jpg 270w,  
-            ./images/index/igor_lg2.jpg 540w"
-
-            src="./images/index/igor_sm.jpg" 
-            alt="Игорь Демьяненко"
-            sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" />
+            ./images/index/igor_lg2.jpg 540w" src="./images/index/igor_sm.jpg" alt="Игорь Демьяненко"
+              sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" />
             <div class="team__actor">
               <h3 class="team__actors">Ольга Репина</h3>
               <p class="team__roles">Frontend Developer</p>
@@ -319,18 +304,14 @@
             </div>
           </li>
           <li class="team__list">
-            <img 
-            srcset="
+            <img srcset="
             ./images/index/mykola_sm.jpg 450w, 
             ./images/index/mykola_sm2.jpg 900w,
             ./images/index/mykola_md.jpg 354w, 
             ./images/index/mykola_md2.jpg 708w,
             ./images/index/mykola_lg.jpg 270w,  
-            ./images/index/mykola_lg2.jpg 540w"
-            
-            src="./images/index/mykola_sm.jpg" 
-            alt="Николай Тарасов"
-            sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" />
+            ./images/index/mykola_lg2.jpg 540w" src="./images/index/mykola_sm.jpg" alt="Николай Тарасов"
+              sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" />
             <div class="team__actor">
               <h3 class="team__actors">Николай Тарасов</h3>
               <p class="team__roles">Marketing</p>
@@ -367,18 +348,14 @@
             </div>
           </li>
           <li class="team__list">
-            <img 
-            srcset="
+            <img srcset="
             ./images/index/myhailo_sm.jpg 450w, 
             ./images/index/myhailo_sm2.jpg 900w,
             ./images/index/myhailo_md.jpg 354w, 
             ./images/index/myhailo_md2.jpg 708w,
             ./images/index/myhailo_lg.jpg 270w,  
-            ./images/index/myhailo_lg2.jpg 540w"
-            
-            src="./images/index/myhailo_sm.jpg" 
-            alt="Михаил Ермаков"
-            sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" />
+            ./images/index/myhailo_lg2.jpg 540w" src="./images/index/myhailo_sm.jpg" alt="Михаил Ермаков"
+              sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw" />
             <div class="team__actor">
               <h3 class="team__actors">Михаил Ермаков</h3>
               <p class="team__roles">UI Designer</p>

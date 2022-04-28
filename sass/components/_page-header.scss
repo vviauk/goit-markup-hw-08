@@ -4,10 +4,10 @@
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgb(236, 236, 236);
-  
+
   @media screen and (min-width: 768px) {
-   padding-top: 21px;
-   padding-bottom: 21px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -22,9 +22,6 @@
 }
 
 .header__nav {
-  // margin-top: 16px;
-  // margin-bottom: 16px;
-  // margin-left: 15px;
   display: flex;
 }
 
@@ -35,16 +32,23 @@
 }
 
 .header__contacts {
-  @media screen and (min-width: 1200px) {
+  color: rgba(117, 117, 117, 1);
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  @media screen and (min-width: 768px) {
     display: flex;
   }
-  // align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
 }
 
 .header__wrapper {
   margin: 0;
   padding-left: 0;
-  // align-items: center;
   @media screen and (min-width: 1200px) {
     display: flex;
   }
@@ -64,14 +68,25 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    // align-items: center;
-    // justify-content: center;
   }
 }
 
-.header__icons {
+.header__icons-email,
+.header__icons-phone {
   margin-right: 10px;
   fill: currentColor;
+}
+.header__icons-email {
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.header__icons-phone {
+  @media screen and (min-width: 1200px) {
+    height: 16px;
+  }
 }
 
 .header__contacts link {
@@ -81,11 +96,10 @@
 }
 
 .header__logo {
-    display: none;
+  display: none;
   @media screen and (min-width: 768px) {
-      display: flex;
-      // align-items: center;
-    }
+    display: flex;
+  }
   @media screen and (min-width: 768px) {
     margin-right: 88px;
   }
@@ -130,7 +144,7 @@
   &:after {
     position: absolute;
     content: '';
-    bottom: -35px;
+    bottom: -34px;
     left: 0;
     display: block;
     width: 100%;
@@ -140,16 +154,6 @@
     @media screen and (min-width: 1200px) {
       bottom: -33px;
     }
-  }
-}
-
-.header__contacts {
-  color: rgba(117, 117, 117, 1);
-  font-weight: 500;
-  font-size: 12px;
-  letter-spacing: 0.02em;
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
   }
 }
 

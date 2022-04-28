@@ -37,20 +37,75 @@
 
       <ul class="header__wrapper">
         <li class="header__links">
-          <a class="header__contacts link" href="mailto:info@devstudio.com"><svg class="header__icons" width="16"
-              height="12">
+          <a class="header__contacts link" href="mailto:info@devstudio.com"><svg class="header__icons-email" width="14"
+              height="10">
               <use href="images/icons.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com</a>
         </li>
 
         <li class="header__links">
-          <a class="header__contacts link phone" href="tel:+380961111111"><svg class="header__icons" width="10"
-              height="16">
+          <a class="header__contacts link phone" href="tel:+380961111111"><svg class="header__icons-phone" width="10"
+              height="14">
               <use href="images/icons.svg#icon-phone"></use>
             </svg>+38 096 111 11 11</a>
         </li>
       </ul>
+    </div>
+    <div class="container mobile__container">
+      <nav class="mobile__nav">
+        <a class="mobile__logo" href="./index.html">Web<span class="mobile__type">Studio</span></a>
+        <button class="mobile__button" data-menu-button type="button" aria-expanded="false">
+          <svg class="mobile__icons" width="40" height="40">
+            <use class="mobile__open" href="images/icons.svg#icon-menu-mobile"></use>
+            <use class="mobile__close" href="images/icons.svg#icon-close-mobile"></use>
+          </svg>
+        </button>
+
+        <div class="mobile__menu" data-menu>
+          <ul class="mobile__menu-nav">
+            <li class="mobile__menu-item">
+              <a class="mobile__menu-link" href="">Студия</a>
+            </li>
+            <li class="mobile__menu-item">
+              <a class="mobile__menu-link" href="">Портфолио</a>
+            </li>
+            <li class="mobile__menu-item">
+              <a class="mobile__menu-link" href="">Контакты</a>
+            </li>
+          </ul>
+          <div class="asd">
+            <ul class="mobile__menu-contacts">
+              <li class="mobile__menu-items"><a class="mobile__menu-phone" href="">+38 096 111 11 11</a></li>
+              <li class="mobile__menu-items"><a class="mobile__menu-email" href="">info@devstudio.com</a></li>
+            </ul>
+            <ul class="mobile__menu-social">
+              <li class="mobile__menu-socials">
+                <a class="mobile__menu-links" href="">Instagram</a>
+              </li>
+              <li class="mobile__menu-socials">
+                <a class="mobile__menu-links" href="">Twitter</a>
+              </li>
+              <li class="mobile__menu-socials">
+                <a class="mobile__menu-links" href="">Facebook</a>
+              </li>
+              <li class="mobile__menu-socials">
+                <a class="mobile__menu-links" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="mobile__list">
+          <li class="mobile__item"><a class="mobile__link" href="./index.html"></a>Студия</li>
+          <li class="mobile__item"><a class="mobile__link" href="./portfolio.html"></a>Портфолио</li>
+          <li class="mobile__item"><a class="mobile__link" href="./index.html"></a>Контакты</li>
+        </ul>
+        <ul class="mobile__contacts">
+          <li class="mobile__contact"><a class="mobile__contact-link" href=""></a>info@devstudio.com</li>
+          <li class="mobile__contact"><a class="mobile__contact-link" href=""></a>+38 096 111 11 11</li>
+        </ul>
+      </nav>
     </div>
   </header>
   <!-- уникальный контент -->
@@ -96,8 +151,7 @@
           </li>
           <li class="portfolio__img">
             <div class="portfolio__wrapper">
-              <img class="portfolio__photos-img" src="./images/basketball.jpg" alt="basketball" width="354"
-                />
+              <img class="portfolio__photos-img" src="./images/basketball.jpg" alt="basketball" width="354" />
               <p class="portfolio__description">
                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                 Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -111,8 +165,7 @@
           </li>
           <li class="portfolio__img">
             <div class="portfolio__wrapper">
-              <img class="portfolio__photos-img" src="./images/restaurant.jpg" alt="restaurant" width="354"
-                />
+              <img class="portfolio__photos-img" src="./images/restaurant.jpg" alt="restaurant" width="354" />
               <p class="portfolio__description">
                 Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                 Все это позволит посетителю получить исчерпывающие сведения о компании или частном

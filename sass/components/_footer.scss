@@ -12,11 +12,10 @@
   padding: 0;
   margin: 0;
   padding: 0;
-  // align-items: baseline;
-  @media screen and (min-width:1200px) {
-  display: flex;
-  text-align:left;
   
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    text-align: left;
   }
 }
 
@@ -24,40 +23,33 @@
   display: flex;
   justify-content: center;
   margin-bottom: 60px;
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     margin-right: 165px;
     margin-bottom: 0;
-    
-    }
-    @media screen and (min-width: 1200px) {
-      margin-right: 70px;
-            
-      }
- 
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 
   &:last-child {
     margin-bottom: 0;
     margin-right: 0;
   }
-  
 }
 .footer__table {
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
-  justify-content: center;
-    
-    }
-  
+    justify-content: center;
+  }
 }
-
 
 .footer__subcontainer {
   margin-top: 60px;
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     margin-top: 0;
     margin-left: 93px;
     display: flex;
-    }
+  }
 }
 
 .footer__title {
@@ -71,24 +63,21 @@
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
-  @media screen and (min-width:1200px) {
-    text-align:left;
-  
+  @media screen and (min-width: 1200px) {
+    text-align: left;
   }
 }
 
 .footer__list {
   list-style: none;
-  // text-align: center;
-
-  @media screen and (min-width:1200px) {
+  
+  @media screen and (min-width: 1200px) {
     margin-right: 70px;
 
     &:nth-child(2) {
       margin-right: 93px;
     }
   }
-
 
   &:last-child {
     margin-right: 0;
@@ -178,9 +167,8 @@
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-   @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     margin-left: 12px;
-  
   }
 
   &:hover,
@@ -199,18 +187,16 @@
 .footer__email {
   display: block;
   margin-top: 9px;
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
-  
   }
 }
 
 .footer__phone {
   display: block;
   margin-top: 9px;
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
-  
   }
 }
 
@@ -241,11 +227,10 @@
 .footer__form {
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
-  @media screen and (min-width:1200px) {
-  display: flex;
-  flex-direction: row;
-  align-items: unset;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: unset;
   }
 }
