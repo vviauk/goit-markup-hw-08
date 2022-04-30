@@ -849,7 +849,6 @@ img {
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .team__list {
-    flex-basis: calc(100% / 2 - 30px);
     margin-right: 30px;
     margin-bottom: 30px;
     max-width: 354px;
