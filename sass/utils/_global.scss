@@ -5,7 +5,6 @@ img {
   @media screen and (min-width:768px) {
     display: flex;
     flex-wrap: wrap;
-    
   }
   }
   
@@ -27,14 +26,12 @@ img {
 
     @media screen and (min-width:768px) and (max-width:1199px) {
       max-width: 768px;
-      // padding-left: 39px;
-      // padding-right: 39px;
+      
     }
 
     @media screen and (min-width:1200px) {
       max-width: 1200px;
-      // padding-left: 39px;
-      // padding-right: 39px;
+      
     }
   }
 
