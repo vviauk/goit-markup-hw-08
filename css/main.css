@@ -1604,7 +1604,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .portfolio__img {
-    flex-basis: calc(100% / 2 - 30px);
     max-width: 354px;
   }
   .portfolio__img:nth-child(2n + 1) {
