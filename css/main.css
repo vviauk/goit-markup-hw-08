@@ -564,6 +564,8 @@ ul {
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .hero {
     background-image: url(../images/index/header_lg.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -579,10 +581,15 @@ ul {
   margin-bottom: 0;
   color: #fff;
   font-weight: 900;
-  font-size: 26px;
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+  }
 }
 
 .hero__button {
@@ -627,13 +634,16 @@ ul {
   min-width: 270px;
   max-width: 450px;
   margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .about__list {
     max-width: 354px;
+    margin-left: 0;
+    margin-right: 30px;
+  }
+  .about__list:nth-child(2n) {
+    margin-right: 0;
   }
   .about__list:nth-child(3) {
     margin-bottom: 0;
@@ -695,7 +705,6 @@ ul {
 }
 
 .about__advantages {
-  text-align: center;
   margin-bottom: 10px;
   font-size: 14px;
   font-weight: 700;
@@ -747,10 +756,18 @@ ul {
 .team__our,
 .clients__title {
   display: inline-block;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+}
+
+@media screen and (min-width: 11200px) {
+  .jobs__works,
+  .team__our,
+  .clients__title {
+    margin-bottom: 50px;
+  }
 }
 
 .jobs__wrapper {
@@ -812,6 +829,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .team__main {
+    display: flex;
+  }
+}
+
 .team__list {
   margin-bottom: 30px;
   margin-left: 0px;
@@ -824,7 +847,7 @@ img {
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .team__list {
     flex-basis: calc(100% / 2 - 30px);
     margin-right: 30px;
@@ -836,7 +859,7 @@ img {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__list:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
@@ -847,9 +870,6 @@ img {
     margin-right: 30px;
     margin-bottom: 0;
   }
-}
-
-@media screen and (min-width: 1200px) {
   .team__list:last-child {
     margin: 0;
   }
@@ -1618,6 +1638,7 @@ img {
 @media screen and (min-width: 1200px) {
   .portfolio__img {
     margin-right: 30px;
+    max-width: 370px;
   }
   .portfolio__img:nth-child(3n) {
     margin-right: 0;
