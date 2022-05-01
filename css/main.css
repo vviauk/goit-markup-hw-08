@@ -1051,7 +1051,6 @@ img {
 
 .footer__addresses {
   text-align: center;
-  padding: 0;
   margin: 0;
   padding: 0;
 }
@@ -1091,6 +1090,7 @@ img {
   .footer__table {
     display: flex;
     justify-content: center;
+    flex-grow: 1;
   }
 }
 
